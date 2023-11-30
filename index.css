@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mooli&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #7b76ff;
+}
+.wrapper-outer-container h1 {
+  text-align: center;
+  font-size: 25px;
+  /* margin-bottom:2rem; */
+}
+.wrapper-container h2
+{
+    text-align: center;
+}
+.wrapper-outer-container {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  margin: 10vh auto;
+}
+.wrapper-container {
+  width: 50%;
+  /* margin:2vh auto; */
+  background-color: #fff;
+  padding: 3rem;
+}
+.wrapper-container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.wrapper-container .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60%;
+}
+.wrapper-container .input-container input {
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid #c1c1c1;
+  border-radius: 0.5rem;
+}
+
+.generate-container .multiply {
+  background-color: #d4edda;
+  color: #3591a1;
+  border: 1px solid #d3efda;
+  border-radius: 5px;
+  font-weight: 600;
+  gap: 1rem;
+
+  width: 100%;
+  border-collapse: collapse;
+  display: block;
+  max-height: 23.2rem;
+  overflow-y: scroll;
+  display: flex;
+  flex-flow: column;
+  padding: 1rem;
+}
+
+.wrapper-container .generate-container .multiply .row,
+td {
+  border: 1px solid #3591a1;
+  padding: 1rem;
+}
+
+.custom-btn {
+  padding: 0.8rem 1rem;
+  width: 80%;
+
+  background-color: #544eff;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin: 0 auto;
+}
+.custom-btn:hover {
+  background-color: #2e27f8;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3591a1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #428894;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #176b79;
+  border-radius: 10px;
+}
+@media screen and (max-width:768px) {
+    .wrapper-outer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    .wrapper-container
+    {
+        width:70%;
+    }
+}
+@media screen and (max-width:450px) {
+   
+    .wrapper-container
+    {
+        width:100%;
+    }
+}
